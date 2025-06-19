@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam - Developer Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Shivam's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="#head">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi, My name is
+                <span class="purple">Shivam</span>
+                <div>And I am a Passinate</div>
+                <span id="element"></span><br>
+                <a href="https://github.com/"><button>View GitHub</button></a>
+                <a href="https://www.linkedin.com/in/shivam-sharma-565522296/"><button>View Linkedin</button></a>
+            </div>
+            <div class="rightsection">
+                <img src="pngtree-developers-are-coding-programs-on-computers-programmers-are-analyzing-data-png-image_11902650.png" alt="Developer Image">
+                    </div>
+        </section>
+        <hr>
+ <section class="secondsection">
+  <h1>Work Experience</h1>
+  <div class="box"></div>
+
+  <div class="experience-row">
+  <div class="experience-item">
+    <img class="image-top" src="ca5b691e7d1ed9b7f1e1dbfa9a325513.png" alt="">
+    <div class="cross-line"></div>
+    <div class="vertical-line"></div>
+    <div class="verticle-text">HTML Developer (2023-Present)</div>
+    <div class="verticle-desc">Built responsive websites using HTML & CSS.</div>
+  </div>
+
+  <div class="experience-item">
+    <img class="image-top" src="adcfa774b8a3f29caaa12541d44464cd.png" alt="">
+    <div class="cross-line"></div>
+    <div class="vertical-line"></div>
+    <div class="verticle-text">Node.Js Developer (2023–Present)</div>
+    <div class="verticle-desc">Developed backend APIs using Node.js & Express.</div>
+  </div>
+
+  <div class="experience-item">
+    <img class="image-top" src="6f8415ffc78eaee0b44d053a1b79f096.png" alt="">
+    <div class="cross-line"></div>
+    <div class="vertical-line"></div>
+    <div class="verticle-text">Python Developer (2023–Present)</div>
+    <div class="verticle-desc">Wrote automation scripts and solved real tasks.</div>
+  </div>
+
+  <div class="experience-item">
+    <img class="image-top" src="pngegg.png" alt="">
+    <div class="cross-line"></div>
+    <div class="vertical-line"></div>
+    <div class="verticle-text">Video Editor (2024–Present)</div>
+    <div class="verticle-desc">Edited videos with effects and smooth cuts.</div>
+  </div>
+</div>
+<div id="head">
+<h1>Check Out My Video Editing Samples</h1>
+<h3>[CLICK ON BUTTONS TO PLAY THE VIDEO]</h3>
+</div>
+<!-- Video Buttons + Videos -->
+<div style="text-align: center; margin-top: 20px;">
+
+  <button onclick="showVideo('myVideo1')" id="video">Video 1</button>
+  <button onclick="showVideo('myVideo2')" id="video">Video 2</button>
+  <button onclick="showVideo('myVideo3')" id="video">Video 3</button>
+  <button onclick="showVideo('myVideo4')" id="video">Video 4</button>
+
+  <br><br>
+
+  <video id="myVideo1" width="360" height="640" controls style="display: none;">
+    <source src="0519.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <video id="myVideo2" width="360" height="640" controls style="display: none;">
+    <source src="0523.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <video id="myVideo3" width="360" height="640" controls style="display: none;">
+    <source src="VIDEO 01 - Made with Clipchamp.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <video id="myVideo4" width="360" height="640" controls style="display: none;">
+    <source src="0519 (2)(1).mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+</div>
+
+<script>
+  function showVideo(videoId) {
+  const videos = ['myVideo1', 'myVideo2', 'myVideo3', 'myVideo4'];
+  videos.forEach(id => {
+    const vid = document.getElementById(id);
+    if (vid) {
+      vid.pause();
+      vid.style.display = 'none';
+      vid.currentTime = 0;
+    }
+  });
+  const selectedVideo = document.getElementById(videoId);
+  if (selectedVideo) {
+    selectedVideo.style.display = 'block';
+    selectedVideo.play();
+  }
+}
+
+</script>
+
+
+  </div>
+</section>
+
+</main>
+<footer>
+    <div class="footer">
+        <div class="footer-first">
+        <h2>Shivam's Developer Portfolio</h2>
+        <ul>
+            <li>Home</a></li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact :- sharma.shivamkumaraza@gmail.com</li>
+        </ul>
+        </div>
+        <div class="footer-second"></div>
+        <div class="footer-third"></div>
+        <div class="footer-fourth"></div>
+    </div>
+</footer>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Web Designer','Python Developer','Video Editor'],
+      typeSpeed: 50,
+    });
+  </script>
+  
+</body>
+</html>
